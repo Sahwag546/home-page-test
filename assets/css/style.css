@@ -301,8 +301,15 @@ span {
     width: 100%;
     height: 100%;
 }
+.sm-gap{
+    gap: 24px;
+}
 /*============== responsive nav ==================*/
-
+@media (max-width:576px) {
+    .sm-gap{
+        gap: 0;
+    }
+}
 @media (min-width:992px) {
     .pt-100 {
         padding-top: 170px;
@@ -353,7 +360,7 @@ span {
     }
 
     .check:checked~label[for="menu"] span:last-child {
-        transform: rotate(-37deg);
+        transform: rotate(-33deg);
         transform-origin: left;
         transition: 300ms linear;
     }
